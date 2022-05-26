@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+
+h1 {
+  margin: 0;
+}
+
+span {
+  font-size: 12px;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  text-align: center;
+}
+
+.login__form {
+  width: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.login__social {
+  margin: 50px 0;
+}
+
+.login__link {
+  color: #333;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.login__link--social {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 45px;
+  width: 45px;
+}
+
+.login__label {
+  font-size: 13px;
+}
+
+.login__link--forgot {
+  display: block;
+}
+
+.login__btn {
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: .8em;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 100ms ease-in;
+}
+
+.login__btn:active {
+  transform: scale(0.95);
+}
+
+.login__desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  background: linear-gradient(to right, #FF4B2B, #FF416C) no-repeat 0 0;
+  background-size: cover;
+  color: #ffffff;
+  width: 50%;
+}
+
+.login__text {
+  font-size: 15px;
+}

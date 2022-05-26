@@ -1,29 +1,66 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML CSS Login Form</title>
-  <meta name="description" content="Login form using HTML & CSS">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML CSS Login Form</title>
+    <meta name="description" content="Login form using HTML & CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <meta property="og:title" content="HTML*CSS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/login.css">
 
-<body>
+    <meta name="theme-color" content="#fafafa">
+  </head>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <body>
+    <main class="login">
+
+      <div class="login__form">
+        <form action="#">
+          <h1 class="login__header login__header--dark">Login</h1>
+          <div class="login__social">
+            <a href="#" class="login__link login__link--social"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+            <a href="#" class="login__link login__link--social"><i class="fa-brands fa-twitter fa-2x"></i></a>
+          </div>
+
+          <span>or use your account</span>
+
+          <label class="login__label">
+            <input type="email" placeholder="Email"/>
+          </label>
+          <label class="login__label">
+            <input type="password" placeholder="Password"/>
+          </label>
+
+          <a href="#" class="login__link login__link--forgot">Forgot your password?</a>
+          <button class="login__btn">Log in</button>
+        </form>
+      </div>
+
+      <div class="login__desc">
+        <h1 class="login__header login__header--white">HTML CSS Login Form</h1>
+        <p class="login__text">This login form is created using pure HTML and CSS. For social icons, FontAwesome is
+          used</p>
+      </div>
+
+    </main>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 
 </html>
